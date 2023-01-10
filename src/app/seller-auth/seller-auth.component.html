@@ -1,0 +1,43 @@
+<div class="seller-auth border shadow">
+  <div class="signup">
+    <h2 class="signup-heading">Signup as a seller</h2>
+
+    <form #sellerSignup="ngForm" (ngSubmit)="signup(sellerSignup.value)">
+      <label for="name">Name</label>
+      <input
+        placeholder="Enter your name"
+        class="form-control"
+        type="text"
+        name="name"
+        id="name"
+        ngModel
+      />
+
+      <label for="email">Email</label>
+      <input
+        placeholder="Enter email address"
+        class="form-control"
+        type="email"
+        name="email"
+        id="email"
+        ngModel
+      />
+
+      <label for="pword">Password</label>
+      <input
+        placeholder="Enter Password"
+        class="form-control"
+        type="password"
+        name="password"
+        id="pword"
+        ngModel
+      />
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-lg btn-outline-primary">
+          Sign up
+        </button>
+      </div>
+    </form>
+  </div>
+</div>
