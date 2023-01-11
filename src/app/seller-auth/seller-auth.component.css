@@ -2,7 +2,6 @@
   max-width: 800px;
   margin: auto;
   padding: 25px;
-
   margin-top: 25px;
 }
 
@@ -21,4 +20,12 @@ label {
 
 .d-grid {
   margin-top: 20px;
+}
+
+.stretched-link {
+  cursor: pointer;
+}
+
+.stretched-link::after {
+  position: relative;
 }

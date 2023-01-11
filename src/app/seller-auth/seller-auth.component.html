@@ -1,5 +1,5 @@
 <div class="seller-auth border shadow">
-  <div class="signup">
+  <div *ngIf="!showLogin" class="signup">
     <h2 class="signup-heading">Signup as a seller</h2>
 
     <form #sellerSignup="ngForm" (ngSubmit)="signup(sellerSignup.value)">
@@ -38,6 +38,52 @@
           Sign up
         </button>
       </div>
+
+      <br />
+
+      <a class="stretched-link" (click)="openLogin()"
+        >Existing User? Login here</a
+      >
     </form>
+  </div>
+
+  <!-- Login Form -->
+
+  <div *ngIf="showLogin" class="login">
+    <h2 class="login-heading">Login as a seller</h2>
+
+    <form #sellerLogin="ngForm" (ngSubmit)="login(sellerLogin.value)">
+      <label for="lemail">Email</label>
+      <input
+        placeholder="Enter email address"
+        class="form-control"
+        type="email"
+        name="email"
+        id="lemail"
+        ngModel
+      />
+
+      <label for="lpword">Password</label>
+      <input
+        placeholder="Enter Password"
+        class="form-control"
+        type="password"
+        name="password"
+        id="lpword"
+        ngModel
+      />
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-lg btn-outline-primary">
+          Login
+        </button>
+      </div>
+    </form>
+
+    <br />
+
+    <a class="stretched-link" (click)="openSignup()"
+      >Don't have an account? Signup here</a
+    >
   </div>
 </div>

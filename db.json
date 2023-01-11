@@ -1,0 +1,40 @@
+{
+  "seller": [
+    {
+      "name": "Balaji Nandure",
+      "email": "balaji@shoppingo.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Anuj Nandure",
+      "email": "anuj@shoppingo.com",
+      "password": "1234",
+      "id": 2
+    },
+    {
+      "name": "Akash Prayag",
+      "email": "akash@shoppingo.com",
+      "password": "akash1234",
+      "id": 3
+    },
+    {
+      "name": "Rushi Jadhav",
+      "email": "rushi@shoppingo.com",
+      "password": "rushi1234",
+      "id": 4
+    },
+    {
+      "name": "Durga",
+      "email": "durga@mail.com",
+      "password": "durga1234",
+      "id": 5
+    },
+    {
+      "name": "Pradnya",
+      "email": "pradnya@abc.com",
+      "password": "pradnya1234",
+      "id": 6
+    }
+  ]
+}
