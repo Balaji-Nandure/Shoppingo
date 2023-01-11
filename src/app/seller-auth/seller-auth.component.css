@@ -29,3 +29,13 @@ label {
 .stretched-link::after {
   position: relative;
 }
+
+.login-error {
+  color: red;
+  margin: 0;
+  padding: 0;
+}
+
+.password {
+  margin-bottom: 0;
+}

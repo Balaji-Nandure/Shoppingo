@@ -66,12 +66,17 @@
       <label for="lpword">Password</label>
       <input
         placeholder="Enter Password"
-        class="form-control"
+        class="form-control password"
         type="password"
         name="password"
         id="lpword"
         ngModel
       />
+
+      <!-- Login Error -->
+      <p *ngIf="authError" class="login-error">
+        <small>** Please enter valid email address and password</small>
+      </p>
 
       <div class="d-grid">
         <button type="submit" class="btn btn-lg btn-outline-primary">
