@@ -9,7 +9,13 @@ img {
 tr {
   min-height: 200px;
 }
-/* 
+/*
 .description {
   overflow: scroll;
 } */
+
+.delete-message {
+  width: 60%;
+  position: fixed;
+  top: 50px;
+}

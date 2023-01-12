@@ -9,13 +9,35 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SellerHomeComponent implements OnInit {
   productsList: Product[] | undefined;
+  productDeleteMessage: string | undefined;
 
   constructor(private product: ProductService) {}
 
   ngOnInit(): void {
+    this.list();
+  }
+
+  deleteProduct(id: number) {
+    console.log(id);
+    this.product.deleteProduct(id).subscribe((res) => {
+      console.log(res);
+      if (res) {
+        this.productDeleteMessage = 'Product deleted successfully';
+        this.list();
+      }
+    });
+
+    setTimeout(() => {
+      this.productDeleteMessage = undefined;
+    }, 3000);
+  }
+
+  list() {
     this.product.productList().subscribe((res) => {
       console.log(res);
-      this.productsList = res;
+      if (res) {
+        this.productsList = res;
+      }
     });
   }
 }

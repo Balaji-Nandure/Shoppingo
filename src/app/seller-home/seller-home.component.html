@@ -1,6 +1,10 @@
 <div class="product-lis">
   <h1>All products list</h1>
 
+  <p *ngIf="productDeleteMessage" class="delete-message alert alert-danger">
+    {{ productDeleteMessage }}
+  </p>
+
   <div class="table-responsive">
     <table class="table table-striped table-hover table-bordered align-middle">
       <thead>
@@ -11,6 +15,7 @@
           <th>Color</th>
           <th>catagory</th>
           <th>description</th>
+          <th>Action</th>
         </tr>
       </thead>
 
@@ -22,6 +27,11 @@
           <td class="p-3">{{ item.color }}</td>
           <td class="p-3">{{ item.catagory }}</td>
           <td class="p-3 description">{{ item.description }}</td>
+          <td class="p-3">
+            <button class="btn btn-danger" (click)="deleteProduct(item.id)">
+              Delete
+            </button>
+          </td>
         </tr>
       </tbody>
     </table>
