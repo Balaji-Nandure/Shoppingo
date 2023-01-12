@@ -28,28 +28,37 @@
         <!-- Seller menu bar -->
         <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link text-body" aria-current="page" routerLink="/"
+            <a
+              class="nav-link text-body"
+              aria-current="page"
+              routerLink="/seller-home"
               >Product List</a
             >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-body" routerLink="seller-auth"
+            <a class="nav-link text-body" routerLink="seller-add-product"
               >Add Product</a
             >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-body" routerLink="">Logout</a>
+            <a class="nav-link text-body" (click)="logout()">Logout</a>
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-body" routerLink="">Seller Name</a>
+            <a class="nav-link text-body" routerLink="">{{
+              sellerName | titlecase
+            }}</a>
           </li>
         </ul>
       </div>
 
-      <form *ngIf="menuType === 'default'" class="d-flex search-bar" role="search">
+      <form
+        *ngIf="menuType === 'default'"
+        class="d-flex search-bar"
+        role="search"
+      >
         <input
           class="form-control me-2"
           type="search"
