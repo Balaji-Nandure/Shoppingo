@@ -3,27 +3,53 @@
     <a class="navbar-brand" routerLink="/">Shoppingo..</a>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link text-body" aria-current="page" routerLink="/"
-            >Home</a
-          >
-        </li>
+      <div [ngSwitch]="menuType">
+        <!-- Default menubar -->
+        <ul *ngSwitchCase="'default'" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-body" aria-current="page" routerLink="/"
+              >Home</a
+            >
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-body" routerLink="seller-auth">Seller</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="seller-auth">Seller</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-body" routerLink="">Login</a>
-        </li>
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="">Login</a>
+          </li>
 
-        <li class="nav-item">
-          <a class="nav-link text-body" routerLink="">Cart</a>
-        </li>
-      </ul>
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="">Cart</a>
+          </li>
+        </ul>
 
-      <form class="d-flex" role="search">
+        <!-- Seller menu bar -->
+        <ul *ngSwitchCase="'seller'" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-body" aria-current="page" routerLink="/"
+              >Product List</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="seller-auth"
+              >Add Product</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="">Logout</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="">Seller Name</a>
+          </li>
+        </ul>
+      </div>
+
+      <form *ngIf="menuType === 'default'" class="d-flex search-bar" role="search">
         <input
           class="form-control me-2"
           type="search"

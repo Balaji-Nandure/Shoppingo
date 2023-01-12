@@ -10,3 +10,13 @@ nav {
   letter-spacing: 2px;
   text-decoration: underline;
 }
+
+.search-bar {
+  position: absolute;
+  right: 20px;
+}
+
+/* li a:hover {
+  text-decoration: underline;
+  transition: all 0.4s ease-in-out;
+} */
