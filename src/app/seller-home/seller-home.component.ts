@@ -1,6 +1,7 @@
 import { Product } from '../data-type';
 import { ProductService } from './../services/product.service';
 import { Component, OnInit } from '@angular/core';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @Component({
   selector: 'app-seller-home',
