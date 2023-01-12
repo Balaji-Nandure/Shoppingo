@@ -1,6 +1,10 @@
 <div class="add-product border shadow">
   <h2 class="add-product-heading">Add new product</h2>
 
+  <p *ngIf="addProductMessage" class="alert alert-success">
+    {{ addProductMessage }}
+  </p>
+
   <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
     <label for="pname">Product Name</label>
     <input
