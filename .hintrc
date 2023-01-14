@@ -8,6 +8,7 @@
       {
         "duplicate-id-aria": "off"
       }
-    ]
+    ],
+    "axe/text-alternatives": "off"
   }
 }

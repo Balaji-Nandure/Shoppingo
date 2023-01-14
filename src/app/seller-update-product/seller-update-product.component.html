@@ -1,7 +1,7 @@
 <div class="update-product border shadow">
   <h2 class="add-product-heading">Update product</h2>
 
-  <p class="alert alert-success"></p>
+  <p *ngIf="productMessage" class="alert alert-success">{{ productMessage }}</p>
 
   <form #addProduct="ngForm" (ngSubmit)="submit(addProduct.value)">
     <label for="pname">Product Name</label>
