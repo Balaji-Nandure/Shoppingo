@@ -11,7 +11,7 @@
       type="text"
       name="name"
       id="pname"
-      ngModel
+      ngModel="{{ productData?.name }}"
     />
 
     <label for="price"> Product Price</label>
@@ -21,7 +21,7 @@
       type="text"
       name="price"
       id="price"
-      ngModel
+      ngModel="{{ productData?.price }}"
     />
 
     <label for="image">Product image url</label>
@@ -31,7 +31,7 @@
       type="text"
       name="image"
       id="image"
-      ngModel
+      ngModel="{{ productData?.image }}"
     />
 
     <label for="color">Product Color</label>
@@ -41,7 +41,7 @@
       type="text"
       name="color"
       id="color"
-      ngModel
+      ngModel="{{ productData?.color }}"
     />
 
     <label for="catagory">Product catagory</label>
@@ -51,7 +51,7 @@
       type="text"
       name="catagory"
       id="catagory"
-      ngModel
+      ngModel="{{ productData?.catagory }}"
     />
 
     <label for="description">Product description</label>
@@ -62,7 +62,7 @@
       name="description"
       id="description"
       rows="8"
-      ngModel
+      ngModel="{{ productData?.description }}"
     ></textarea>
 
     <div class="d-grid">
