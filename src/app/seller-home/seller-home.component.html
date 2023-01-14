@@ -28,9 +28,15 @@
           <td class="p-3">{{ item.catagory }}</td>
           <td class="p-3 description">{{ item.description }}</td>
           <td class="p-3">
-            <button class="btn btn-danger" (click)="deleteProduct(item.id)">
-              Delete
-            </button>
+            <div class="buttons">
+              <button class="btn btn-danger" (click)="deleteProduct(item.id)">
+                Delete
+              </button>
+
+              <a routerLink="/seller-update-product/{{ item.id }}">
+                <button class="btn btn-info">Update</button>
+              </a>
+            </div>
           </td>
         </tr>
       </tbody>

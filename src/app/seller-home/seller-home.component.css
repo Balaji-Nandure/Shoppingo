@@ -19,3 +19,9 @@ tr {
   position: fixed;
   top: 50px;
 }
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}

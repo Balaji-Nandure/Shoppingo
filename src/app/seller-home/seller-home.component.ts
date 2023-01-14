@@ -19,7 +19,7 @@ export class SellerHomeComponent implements OnInit {
   }
 
   deleteProduct(id: number) {
-    console.log(id);
+    // console.log(id);
     this.product.deleteProduct(id).subscribe((res) => {
       console.log(res);
       if (res) {
@@ -35,7 +35,7 @@ export class SellerHomeComponent implements OnInit {
 
   list() {
     this.product.productList().subscribe((res) => {
-      console.log(res);
+      // console.log(res);
       if (res) {
         this.productsList = res;
       }

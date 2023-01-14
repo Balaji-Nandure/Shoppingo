@@ -1,0 +1,21 @@
+.update-product {
+  max-width: 800px;
+  margin: auto;
+  padding: 25px;
+  margin-top: 25px;
+}
+.stretched-link::after {
+  position: relative;
+}
+
+input {
+  margin-bottom: 10px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.d-grid {
+  margin-top: 20px;
+}
