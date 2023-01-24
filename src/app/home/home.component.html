@@ -76,22 +76,19 @@
 <div class="product-list-wrapper">
   <h1>Treandy products</h1>
   <div class="row">
-    <div class="col-sm-3">
+    <div class="col-sm-3" *ngFor="let product of treandyProducts">
       <div class="product-item">
-        <img
-          src="https://rukminim1.flixcart.com/image/416/416/xif0q/mobile/w/t/r/-original-imaggj68cgtdacxn.jpeg?q=70"
-          alt=""
-        />
+        <img src="{{ product.image }}" alt="" />
 
         <div class="product-details">
-          <h6 class="name-head">heading</h6>
+          <h6 class="name-head">{{ product.name }}</h6>
 
           <div class="product-price">
-            <h6>price</h6>
+            <h6>{{ product.price | currency : "INR" }}</h6>
           </div>
 
           <div class="product-color">
-            <h6>color</h6>
+            <h6>{{ product.color }}</h6>
           </div>
         </div>
 
