@@ -1,0 +1,19 @@
+.container {
+  margin-top: 30px;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+}
+
+img {
+  height: 40vh;
+}
+
+h5 {
+  background-color: rgba(44, 24, 24, 0.6);
+  margin: 5px 0;
+  border-radius: 12px;
+}

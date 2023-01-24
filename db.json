@@ -82,6 +82,15 @@
       "catagory": "Mobile",
       "description": "\nWith a 2.4 GHz processor and an innovative 6 nm architecture, the realme 9 5G is all set to be your reliable and efficient workmate. The 16.51 cm (6.5) LCD display along with the refresh rate of 90 Hz enhances the visual and operational experience. The 16 MP front camera is sure to quench your selfie thirst by creating beautiful imagery.",
       "id": 5
+    },
+    {
+      "name": "Canon PIXMA E3370",
+      "price": "5699",
+      "image": "https://rukminim1.flixcart.com/image/416/416/k4a7c7k0/printer/y/j/z/canon-e3370-original-imafn2wyyxjjvzd6.jpeg?q=70",
+      "color": "Black",
+      "catagory": "Printer",
+      "description": "Canon PIXMA E3370 Compact Wireless All-In-One with LCD for Low-Cost Printing This Ink Efficient printer is designed to give you an affordable wireless printing experience at low running cost . Print, Scan, Copy: ISO standard print speed (A4): 7.7 images per minute (black) / 4.4 images per minute (colour) Hi-speed USB 2.0, Wireless, Wireless Pictbridge, Mopria, AirPrint, Direct Wireless Recommended print volume: 50 - 200 pages",
+      "id": 6
     }
   ]
 }
