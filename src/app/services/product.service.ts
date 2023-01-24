@@ -40,4 +40,10 @@ export class ProductService {
   treandyProducts() {
     return this.http.get<Product[]>('http://localhost:3000/products?_limit=8');
   }
+
+  searchProducts(query: string) {
+    return this.http.get<Product[]>(
+      `http://localhost:3000/products?q=${query}`
+    );
+  }
 }

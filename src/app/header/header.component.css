@@ -24,3 +24,27 @@ nav {
 a {
   cursor: pointer;
 }
+
+.suggestions {
+  z-index: 10;
+  position: absolute;
+  display: list-item;
+  right: 20px;
+  top: 60px;
+  width: 290px;
+  list-style-type: none;
+}
+
+.suggestions li {
+  text-decoration: none;
+}
+
+.suggestions li a {
+  text-decoration: none;
+}
+
+.suggestions li a:hover {
+  /* text-decoration: none */
+  cursor: pointer;
+  background-color: #ddd;
+}

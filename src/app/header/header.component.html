@@ -64,9 +64,17 @@
           type="search"
           placeholder="Search products..."
           aria-label="Search"
+          (keyup)="searchProduct($event)"
+          (blur)="hideSuggestion()"
         />
         <button class="btn btn-outline-success" type="submit">Search</button>
       </form>
+
+      <ul class="suggestions list-group" *ngIf="searchReasults">
+        <li class="list-group-item" *ngFor="let item of searchReasults">
+          <a class="stretched-link text-dark" href="">{{ item.name }}</a>
+        </li>
+      </ul>
     </div>
   </div>
 </nav>
