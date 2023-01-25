@@ -60,6 +60,7 @@
         role="search"
       >
         <input
+          #searchInput
           class="form-control me-2"
           type="search"
           placeholder="Search products..."
@@ -67,7 +68,13 @@
           (keyup)="searchProduct($event)"
           (blur)="hideSuggestion()"
         />
-        <button class="btn btn-outline-success" type="submit">Search</button>
+        <button
+          (click)="submitSearch(searchInput.value)"
+          class="btn btn-outline-success"
+          type="submit"
+        >
+          Search
+        </button>
       </form>
 
       <ul class="suggestions list-group" *ngIf="searchReasults">
