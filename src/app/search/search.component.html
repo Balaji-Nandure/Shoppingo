@@ -11,23 +11,22 @@
   </div>
 </div> -->
 
-<div class="card mb-3 mt-3 p-4">
+<div *ngFor="let item of searchResult" class="card mb-3 mt-3 p-4">
   <div class="row g-0">
     <div class="col-md-3">
-      <img
-        src="https://rukminim1.flixcart.com/image/416/416/xif0q/cycle/m/n/0/chaze-by-milind-soman-sx-20-czbc2704-27-5t-with-dual-disc-27-5-original-imaghj6uawjucd2y.jpeg?q=70"
-        class="img-fluid rounded-start"
-        alt="..."
-      />
+      <img src="{{ item.image }}" class="img-fluid rounded-start" alt="..." />
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h4 class="card-title">Product name</h4>
-        <p class="card-text">
-          <b>Price</b>
+        <h4 class="card-title">{{ item.name }}</h4>
+        <h5 class="text-body">
+          <b>Price: {{ item.price | currency : "INR" }}</b>
+        </h5>
+        <p class="text-body">
+          <span>Color: {{ item.color }}</span>
+          <span class="mx-3">Category: {{ item.catagory }}</span>
         </p>
-        <p class="card-text"><span>Color</span><span>Category</span></p>
-        <p class="card-text">Product search ui</p>
+        <p class="card-text">{{ item.description.substring(0, 250) }}</p>
       </div>
     </div>
   </div>
