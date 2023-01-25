@@ -8,3 +8,7 @@ img {
   display: flex;
   justify-content: space-between;
 } */
+
+.search-heading {
+  text-decoration: none;
+}

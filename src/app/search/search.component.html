@@ -14,11 +14,15 @@
 <div *ngFor="let item of searchResult" class="card mb-3 mt-3 p-4">
   <div class="row g-0">
     <div class="col-md-3">
-      <img src="{{ item.image }}" class="img-fluid rounded-start" alt="..." />
+      <a routerLink="/details/{{ item.id }}">
+        <img src="{{ item.image }}" class="img-fluid rounded-start" alt="..." />
+      </a>
     </div>
     <div class="col-md-8">
       <div class="card-body">
-        <h4 class="card-title">{{ item.name }}</h4>
+        <a class="search-heading text-body" routerLink="/details/{{ item.id }}">
+          <h4 class="card-title">{{ item.name }}</h4>
+        </a>
         <h5 class="text-body">
           <b>Price: {{ item.price | currency : "INR" }}</b>
         </h5>
