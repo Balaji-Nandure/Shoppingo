@@ -10,6 +10,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProductDetailsComponent implements OnInit {
   productData: Product | undefined;
+  productQuantity: number = 1;
 
   constructor(
     private activeRoute: ActivatedRoute,
@@ -24,5 +25,13 @@ export class ProductDetailsComponent implements OnInit {
         // console.log(res);
         this.productData = res;
       });
+  }
+
+  handleQuantity(val: 'inc' | 'dec') {
+    if (this.productQuantity < 20 && val === 'inc') {
+      this.productQuantity++;
+    } else if (this.productQuantity > 1 && val === 'dec') {
+      this.productQuantity--;
+    }
   }
 }

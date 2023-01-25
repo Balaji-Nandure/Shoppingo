@@ -13,9 +13,17 @@
       <h6><b>description:</b> {{ productData.description }}</h6>
 
       <div class="quantity-group">
-        <button class="btn btn-outline-dark">-</button>
-        <input class="form-control" type="number" value="1" />
-        <button class="btn btn-outline-dark">+</button>
+        <button (click)="handleQuantity('dec')" class="btn btn-outline-dark">
+          -
+        </button>
+        <input
+          class="form-control"
+          type="number"
+          value="{{ productQuantity }}"
+        />
+        <button (click)="handleQuantity('inc')" class="btn btn-outline-dark">
+          +
+        </button>
       </div>
 
       <!-- <button class="btn btn-primary btn-lg">Add to cart</button>

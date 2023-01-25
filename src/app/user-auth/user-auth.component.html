@@ -1,0 +1,49 @@
+<!-- User-auth works -->
+
+<div class="user-auth border shadow">
+  <div class="signup">
+    <h2 class="signup-heading">User signup</h2>
+
+    <form #userSignup="ngForm" (ngSubmit)="signup(userSignup.value)">
+      <label for="name">Name</label>
+      <input
+        placeholder="Enter User Name"
+        class="form-control"
+        type="text"
+        name="name"
+        id="name"
+        ngModel
+      />
+
+      <label for="email">Email</label>
+      <input
+        placeholder="Enter email address"
+        class="form-control"
+        type="email"
+        name="email"
+        id="email"
+        ngModel
+      />
+
+      <label for="pword">Password</label>
+      <input
+        placeholder="Enter Password"
+        class="form-control"
+        type="password"
+        name="password"
+        id="pword"
+        ngModel
+      />
+
+      <div class="d-grid">
+        <button type="submit" class="btn btn-lg btn-outline-primary">
+          Sign up
+        </button>
+      </div>
+
+      <br />
+
+      <a class="stretched-link">Existing User? Login here</a>
+    </form>
+  </div>
+</div>

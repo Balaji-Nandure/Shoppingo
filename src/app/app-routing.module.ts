@@ -1,3 +1,4 @@
+import { UserAuthComponent } from './user-auth/user-auth.component';
 import { ProductDetailsComponent } from './product-details/product-details.component';
 import { SearchComponent } from './search/search.component';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
@@ -29,6 +30,7 @@ const routes: Routes = [
   },
   { path: 'search/:query', component: SearchComponent },
   { path: 'details/:productId', component: ProductDetailsComponent },
+  { path: 'user-auth', component: UserAuthComponent },
   // { path: '', component: HomeComponent },
 ];
 

@@ -17,11 +17,13 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-body" routerLink="">Login</a>
+            <a class="nav-link text-body" routerLink="user-auth"
+              >Login/signup</a
+            >
           </li>
 
           <li class="nav-item">
-            <a class="nav-link text-body" routerLink="">Cart</a>
+            <a class="nav-link text-body" routerLink="">Cart(0)</a>
           </li>
         </ul>
 
@@ -79,7 +81,13 @@
 
       <ul class="suggestions list-group" *ngIf="searchReasults">
         <li class="list-group-item" *ngFor="let item of searchReasults">
-          <a class="stretched-link text-dark" href="">{{ item.name }}</a>
+          <a
+            (mousedown)="redirectToDetails(item.id)"
+            class="stretched-link text-dark"
+            href=""
+          >
+            {{ item.name }}
+          </a>
         </li>
       </ul>
     </div>
