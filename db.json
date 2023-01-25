@@ -120,5 +120,18 @@
       "id": 9
     }
   ],
-  "users": []
+  "users": [
+    {
+      "name": "anjir",
+      "email": "anjir@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Radha",
+      "email": "radha@test.com",
+      "password": "1234",
+      "id": 2
+    }
+  ]
 }

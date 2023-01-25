@@ -1,3 +1,4 @@
+import { UserService } from './../services/user.service';
 import { signup } from './../data-type';
 import { Component } from '@angular/core';
 
@@ -7,7 +8,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./user-auth.component.css'],
 })
 export class UserAuthComponent {
+  constructor(private user: UserService) {}
+
   signup(data: signup) {
-    console.log(data);
+    // console.log(data);
+    this.user.userSignup(data);
   }
 }
