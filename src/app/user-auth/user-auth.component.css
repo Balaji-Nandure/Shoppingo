@@ -39,3 +39,7 @@ label {
 .password {
   margin-bottom: 0;
 }
+
+/* button[disabled] {
+  cursor: not-allowed;
+} */

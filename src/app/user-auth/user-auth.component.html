@@ -63,7 +63,13 @@
         name="email"
         id="lemail"
         ngModel
+        #email="ngModel"
+        required
+        email
       />
+      <p *ngIf="email.invalid && email.touched" class="login-error">
+        <small>** Please enter valid email address</small>
+      </p>
 
       <label for="lpword">Password</label>
       <input
@@ -73,15 +79,24 @@
         name="password"
         id="lpword"
         ngModel
+        #password="ngModel"
+        required
       />
+      <p *ngIf="password.invalid && password.touched" class="login-error">
+        <small>** Please enter valid password </small>
+      </p>
 
       <!-- Login Error -->
-      <p class="login-error">
+      <p *ngIf="autherror" class="login-error">
         <small>** Please enter valid email address and password</small>
       </p>
       <!-- Login button -->
       <div class="d-grid">
-        <button type="submit" class="btn btn-lg btn-outline-primary">
+        <button
+          [disabled]="userLogin.invalid"
+          type="submit"
+          class="btn btn-lg btn-outline-primary"
+        >
           Login
         </button>
       </div>
