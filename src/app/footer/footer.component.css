@@ -1,0 +1,6 @@
+.footer {
+  /* float: bottom; */
+  position: fixed;
+  bottom: 0;
+  background-color: #e3f2fd;
+}

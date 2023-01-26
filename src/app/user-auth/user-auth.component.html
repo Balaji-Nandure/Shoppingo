@@ -1,7 +1,8 @@
 <!-- User-auth works -->
 
 <div class="user-auth border shadow">
-  <div class="signup">
+  <!-- Signup form -->
+  <div *ngIf="!showLogin" class="signup">
     <h2 class="signup-heading">User signup</h2>
 
     <form #userSignup="ngForm" (ngSubmit)="signup(userSignup.value)">
@@ -43,7 +44,53 @@
 
       <br />
 
-      <a class="stretched-link">Existing User? Login here</a>
+      <a (click)="openLogin()" class="stretched-link"
+        >Existing User? Login here</a
+      >
     </form>
+  </div>
+
+  <!-- Login Form -->
+  <div class="login" *ngIf="showLogin">
+    <h2 class="login-heading">Login as a seller</h2>
+
+    <form #userLogin="ngForm" (ngSubmit)="login(userLogin.value)">
+      <label for="lemail">Email</label>
+      <input
+        placeholder="Enter email address"
+        class="form-control"
+        type="email"
+        name="email"
+        id="lemail"
+        ngModel
+      />
+
+      <label for="lpword">Password</label>
+      <input
+        placeholder="Enter Password"
+        class="form-control password"
+        type="password"
+        name="password"
+        id="lpword"
+        ngModel
+      />
+
+      <!-- Login Error -->
+      <p class="login-error">
+        <small>** Please enter valid email address and password</small>
+      </p>
+      <!-- Login button -->
+      <div class="d-grid">
+        <button type="submit" class="btn btn-lg btn-outline-primary">
+          Login
+        </button>
+      </div>
+    </form>
+
+    <br />
+
+    <a (click)="openSignup()" class="stretched-link"
+      >Don't have an account? Signup here</a
+    >
   </div>
 </div>
