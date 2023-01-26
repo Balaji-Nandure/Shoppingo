@@ -138,12 +138,6 @@
       "email": "ankit@test.com",
       "password": "1234",
       "id": 3
-    },
-    {
-      "name": "",
-      "email": "",
-      "password": "",
-      "id": 4
     }
   ]
 }
