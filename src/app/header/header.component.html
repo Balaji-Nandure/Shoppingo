@@ -54,13 +54,36 @@
             }}</a>
           </li>
         </ul>
+
+        <!-- User menu bar -->
+        <ul *ngSwitchCase="'user'" class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link text-body" aria-current="page" routerLink="/"
+              >Home</a
+            >
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="seller-auth">Seller</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="">Cart(0)</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-body" (click)="userLogout()">Logout</a>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link text-body" routerLink="">{{
+              userName | titlecase
+            }}</a>
+          </li>
+        </ul>
       </div>
 
-      <form
-        *ngIf="menuType === 'default'"
-        class="d-flex search-bar"
-        role="search"
-      >
+      <form *ngIf="showSearchbar()" class="d-flex search-bar" role="search">
         <input
           #searchInput
           class="form-control me-2"

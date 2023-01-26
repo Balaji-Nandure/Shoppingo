@@ -132,6 +132,12 @@
       "email": "radha@test.com",
       "password": "1234",
       "id": 2
+    },
+    {
+      "name": "ankit",
+      "email": "ankit@test.com",
+      "password": "1234",
+      "id": 3
     }
   ]
 }

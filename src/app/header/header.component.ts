@@ -10,7 +10,9 @@ import { Router } from '@angular/router';
 })
 export class HeaderComponent implements OnInit {
   menuType: string = 'default';
+  // c;
   sellerName: string = '';
+  userName: string = '';
   searchReasults: undefined | Product[];
 
   constructor(private route: Router, private product: ProductService) {}
@@ -29,6 +31,11 @@ export class HeaderComponent implements OnInit {
             let sellerData = sellerStore && JSON.parse(sellerStore)[0];
             this.sellerName = sellerData.name;
           }
+        } else if (localStorage.getItem('user')) {
+          let userStore = localStorage.getItem('user');
+          let userData = userStore && JSON.parse(userStore);
+          this.userName = userData.name;
+          this.menuType = 'user';
         } else {
           // console.log('in default area');
           this.menuType = 'default';
@@ -67,5 +74,17 @@ export class HeaderComponent implements OnInit {
 
   redirectToDetails(id: Number) {
     this.route.navigate([`details/${id}`]);
+  }
+
+  userLogout() {
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth']);
+  }
+
+  showSearchbar() {
+    if (this.menuType === 'default' || this.menuType === 'user') {
+      return true;
+    }
+    return false;
   }
 }
