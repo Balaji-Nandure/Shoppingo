@@ -11,6 +11,7 @@ import { Component, OnInit } from '@angular/core';
 export class ProductDetailsComponent implements OnInit {
   productData: Product | undefined;
   productQuantity: number = 1;
+  removeCart = false;
 
   constructor(
     private activeRoute: ActivatedRoute,
@@ -25,6 +26,17 @@ export class ProductDetailsComponent implements OnInit {
         // console.log(res);
         this.productData = res;
       });
+
+    let cartData = localStorage.getItem('localCart');
+    if (productId && cartData) {
+      let items = JSON.parse(cartData);
+      items = items.filter((item: Product) => productId == item.id.toString());
+      if (items.length > 0) {
+        this.removeCart = true;
+      } else {
+        this.removeCart = false;
+      }
+    }
   }
 
   handleQuantity(val: 'inc' | 'dec') {
@@ -44,7 +56,10 @@ export class ProductDetailsComponent implements OnInit {
       if (!localStorage.getItem('user')) {
         // console.log(this.productData.quantity);
         this.product.localAddToCart(this.productData);
+        this.removeCart = true;
       }
     }
   }
+
+  removeToCart(id: number) {}
 }
