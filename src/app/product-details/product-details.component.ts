@@ -34,4 +34,17 @@ export class ProductDetailsComponent implements OnInit {
       this.productQuantity--;
     }
   }
+
+  addToCart() {
+    if (this.productData) {
+      this.productData.quantity = this.productQuantity;
+      // console.log(this.productData.quantity);
+
+      // to check if user is not logged in and
+      if (!localStorage.getItem('user')) {
+        // console.log(this.productData.quantity);
+        this.product.localAddToCart(this.productData);
+      }
+    }
+  }
 }
