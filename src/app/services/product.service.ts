@@ -1,3 +1,4 @@
+import { EventEmitter } from '@angular/core';
 // import { Product } from './../data-type';
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
@@ -7,6 +8,8 @@ import { Product } from '../data-type';
   providedIn: 'root',
 })
 export class ProductService {
+  cartData = new EventEmitter<Product[] | []>();
+
   constructor(private http: HttpClient) {}
 
   addProduct(data: Product) {
@@ -57,5 +60,6 @@ export class ProductService {
       cartData.push(data);
       localStorage.setItem('localCart', JSON.stringify(cartData));
     }
+    this.cartData.emit(cartData);
   }
 }
