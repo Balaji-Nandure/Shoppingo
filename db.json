@@ -139,5 +139,79 @@
       "password": "1234",
       "id": 3
     }
+  ],
+  "cart": [
+    {
+      "name": "realme 9 5G (Stargaze White, 128 GB)  (6 GB RAM)",
+      "price": "16999",
+      "image": "https://rukminim1.flixcart.com/image/416/416/l0jwbrk0/mobile/m/t/t/-original-imagcb64xkmer9wd.jpeg?q=70",
+      "color": "White",
+      "catagory": "Mobile",
+      "description": "\nWith a 2.4 GHz processor and an innovative 6 nm architecture, the realme 9 5G is all set to be your reliable and efficient workmate. The 16.51 cm (6.5) LCD display along with the refresh rate of 90 Hz enhances the visual and operational experience. The 16 MP front camera is sure to quench your selfie thirst by creating beautiful imagery.",
+      "quantity": 1,
+      "productId": 5,
+      "userId": 2,
+      "id": 1
+    },
+    {
+      "name": "ZEBRONICS ZEB-PIXAPLAY 15 with Android 9.0",
+      "price": "15999",
+      "image": "https://rukminim1.flixcart.com/image/416/416/kyj0vbk0/projector/r/n/r/-original-imagaqky6yftfmn8.jpeg?q=70",
+      "color": "black",
+      "catagory": "Projector",
+      "description": "You can watch your favourite content with realistic and lifelike visuals with the Zebronics ZEB-PixaPlay 15 Smart LED Projector. Thanks to its high-quality images, this projector can deliver an entertaining experience. Courtesy of its brightness of up to 3400 lumens, this projector ensures that the content looks eye-catching, sharp, and vibrant in most settings, producing crystal-clear pictures. Moreover, this projector comes with a high-quality and durable LED lamp, offering consistent performance with an excellent viewing experience.",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 2,
+      "id": 2
+    },
+    {
+      "name": "ZEBRONICS ZEB-PIXAPLAY 15 with Android 9.0",
+      "price": "15999",
+      "image": "https://rukminim1.flixcart.com/image/416/416/kyj0vbk0/projector/r/n/r/-original-imagaqky6yftfmn8.jpeg?q=70",
+      "color": "black",
+      "catagory": "Projector",
+      "description": "You can watch your favourite content with realistic and lifelike visuals with the Zebronics ZEB-PixaPlay 15 Smart LED Projector. Thanks to its high-quality images, this projector can deliver an entertaining experience. Courtesy of its brightness of up to 3400 lumens, this projector ensures that the content looks eye-catching, sharp, and vibrant in most settings, producing crystal-clear pictures. Moreover, this projector comes with a high-quality and durable LED lamp, offering consistent performance with an excellent viewing experience.",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 2,
+      "id": 3
+    },
+    {
+      "name": "ZEBRONICS ZEB-PIXAPLAY 15 with Android 9.0",
+      "price": "15999",
+      "image": "https://rukminim1.flixcart.com/image/416/416/kyj0vbk0/projector/r/n/r/-original-imagaqky6yftfmn8.jpeg?q=70",
+      "color": "black",
+      "catagory": "Projector",
+      "description": "You can watch your favourite content with realistic and lifelike visuals with the Zebronics ZEB-PixaPlay 15 Smart LED Projector. Thanks to its high-quality images, this projector can deliver an entertaining experience. Courtesy of its brightness of up to 3400 lumens, this projector ensures that the content looks eye-catching, sharp, and vibrant in most settings, producing crystal-clear pictures. Moreover, this projector comes with a high-quality and durable LED lamp, offering consistent performance with an excellent viewing experience.",
+      "quantity": 1,
+      "productId": 2,
+      "userId": 2,
+      "id": 4
+    },
+    {
+      "name": "ZEBRONICS ZEB-PIXAPLAY 15 with Android 9.0",
+      "price": "15999",
+      "image": "https://rukminim1.flixcart.com/image/416/416/kyj0vbk0/projector/r/n/r/-original-imagaqky6yftfmn8.jpeg?q=70",
+      "color": "black",
+      "catagory": "Projector",
+      "description": "You can watch your favourite content with realistic and lifelike visuals with the Zebronics ZEB-PixaPlay 15 Smart LED Projector. Thanks to its high-quality images, this projector can deliver an entertaining experience. Courtesy of its brightness of up to 3400 lumens, this projector ensures that the content looks eye-catching, sharp, and vibrant in most settings, producing crystal-clear pictures. Moreover, this projector comes with a high-quality and durable LED lamp, offering consistent performance with an excellent viewing experience.",
+      "quantity": 4,
+      "productId": 2,
+      "userId": 2,
+      "id": 5
+    },
+    {
+      "name": "ZEBRONICS ZEB-PIXAPLAY 15 with Android 9.0",
+      "price": "15999",
+      "image": "https://rukminim1.flixcart.com/image/416/416/kyj0vbk0/projector/r/n/r/-original-imagaqky6yftfmn8.jpeg?q=70",
+      "color": "black",
+      "catagory": "Projector",
+      "description": "You can watch your favourite content with realistic and lifelike visuals with the Zebronics ZEB-PixaPlay 15 Smart LED Projector. Thanks to its high-quality images, this projector can deliver an entertaining experience. Courtesy of its brightness of up to 3400 lumens, this projector ensures that the content looks eye-catching, sharp, and vibrant in most settings, producing crystal-clear pictures. Moreover, this projector comes with a high-quality and durable LED lamp, offering consistent performance with an excellent viewing experience.",
+      "quantity": 4,
+      "productId": 2,
+      "userId": 2,
+      "id": 6
+    }
   ]
 }
